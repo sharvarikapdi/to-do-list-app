@@ -4,15 +4,13 @@ import TaskCard from '../TaskCard/TaskCardComponent.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faPlusSquare} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import MetisMenu from 'react-metismenu';
 
 library.add( faPlusSquare);
 class TaskListsHolder extends React.Component {
   render() {
     return (
       <section className="taskListsHolder">
-        <div className="addBtn" onClick={this.addList}>
-          <span><FontAwesomeIcon className="addBtnIcon" icon="plus-square" /></span> <span className="btnText"> Add list</span>
-        </div>
         <TaskCard />
       </section>
     );
