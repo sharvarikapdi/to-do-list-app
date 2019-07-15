@@ -16,5 +16,6 @@
   font-family: cursive;
 }
 #TaskHolder {
-  width: 100%
+  display: flex;
+  width: 100%;
 }

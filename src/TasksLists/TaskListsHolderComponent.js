@@ -9,9 +9,14 @@ import MetisMenu from 'react-metismenu';
 library.add( faPlusSquare);
 class TaskListsHolder extends React.Component {
   render() {
+    const items = []
+    const elements = [{listName:'List 1'}];
+    for (const [index, value] of elements.entries()) {
+      items.push(<TaskCard key={value} />)
+    }
     return (
       <section className="taskListsHolder">
-        <TaskCard />
+        {items}
       </section>
     );
   }

@@ -1,16 +1,18 @@
 .listCard {
-  border: 1px solid;
+  border: 1px solid #98e85a;
   border-radius: 12px;
   min-height: 200px;
   max-width: 450px;
-  margin: auto;
+  margin: 12px;
+  min-width: 300px;
+  display: inline-block;
 }
 .listCardHeader {
-  background-color: #98E85A;
-  height: 45px;
-  display: flex;
+  background-color: #98e85a;
+  display: inline-block;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  width: 100%;
   text-align: center;
 }
 .listDisplay {
@@ -28,8 +30,15 @@
 
 }
 .itemCheckbox {
-  visibility: hidden;
+  display: none;
 }
 .itemText {
 
+}
+.listCard svg {
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.itemCheckbox.checked + .itemText {
+    text-decoration: line-through;
 }
